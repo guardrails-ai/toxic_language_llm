@@ -1,3 +1,3 @@
-from .main import ValidatorTemplate
+from .main import ToxicLanguageLLM
 
-__all__ = ["ValidatorTemplate"]
+__all__ = ["ToxicLanguageLLM"]

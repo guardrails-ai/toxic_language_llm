@@ -1,7 +1,7 @@
 [project]
-name = "validator-template"
-version = "0.0.0"
-description = "Template repo for Guardrails Hub validators."
+name = "toxic-language-llm"
+version = "0.1.0"
+description = "LLM-based toxic language detection validator for Guardrails AI."
 authors = [
     {name = "Guardrails AI", email = "contact@guardrailsai.com"}
 ]
@@ -9,7 +9,8 @@ license = {file = "LICENSE"}
 readme = "README.md"
 requires-python = ">= 3.8.1"
 dependencies = [
-    "guardrails-ai>=0.4.0"
+    "guardrails-ai>=0.4.0",
+    "litellm"
 ]
 
 [project.optional-dependencies]
@@ -17,7 +18,7 @@ dev = [
     "pyright",
     "pytest",
     "ruff"
-] 
+]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
